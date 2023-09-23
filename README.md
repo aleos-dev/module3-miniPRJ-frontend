@@ -11,9 +11,8 @@ This project involves creating a UI for managing online game accounts using HTML
     - CSS styles: `<project_dir>/src/main/webapp/css/my.css`
 
 ## Features
-
-    <img src="assets/img_2.png" alt="Alt text" width="200"/>
-	<img src="assets/img_1.png" alt="Alt text" width="200"/>
+![img](https://github.com/aleos-dev/module3-miniPRJ-frontend/blob/master/assets/img_2.png?raw=true)
+![img](https://github.com/aleos-dev/module3-miniPRJ-frontend/blob/master/assets/img_1.png?raw=true)
 
 ### Table Structure
 - The table in `my.html` has the following columns:
