@@ -3,6 +3,7 @@
 ## Overview
 This project involves creating a UI for managing online game accounts using HTML, CSS, JS, and jQuery. It provides CRUD functionalities and an admin panel to manage various account details.
 
+
 ## Setup
 - Server setup: Upon deploying the program, a new tab will open in your selected browser.
 - Working files:
@@ -10,6 +11,9 @@ This project involves creating a UI for managing online game accounts using HTML
     - CSS styles: `<project_dir>/src/main/webapp/css/my.css`
 
 ## Features
+
+    <img src="assets/img_2.png" alt="Alt text" width="200"/>
+	<img src="assets/img_1.png" alt="Alt text" width="200"/>
 
 ### Table Structure
 - The table in `my.html` has the following columns:
