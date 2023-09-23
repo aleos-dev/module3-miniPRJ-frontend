@@ -1,0 +1,113 @@
+
+/* Base styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #232323; /* Darker background */
+    color: #f1f1f1;  /* Lighter text color for contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #ffc107; /* Golden color for headings */
+}
+
+/* Table styling */
+#accounts {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #2d2d2d; /* Darker table background */
+}
+
+#accounts th, #accounts td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+}
+
+#accounts td input {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 120px;
+    padding: 5px 10px;
+    border: 2px solid #f1f1f1;
+    border-radius: 4px;
+    background-color: #1a1a1a; /* Dark input bg */
+    color: #f1f1f1;  /* Light text color */
+}
+
+#accounts th {
+    background-color: #333;  /* Darker header */
+    color: #ffc107; /* Golden color text */
+}
+
+#accounts tr:hover {
+    background-color: #3a3a3a; /* Even darker on hover */
+}
+
+.accountsTable-container {
+    overflow-x: auto;
+}
+
+/* Pagination button styling */
+.pagination-button {
+    padding: 5px 10px;
+    border: 1px solid #555;
+    background-color: #2d2d2d;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-button:hover {
+    background-color: #444;
+}
+
+.pagination-button-active {
+    color: #000000;
+    background-color: #ffc107; /* Golden active button */
+    border: none;
+}
+
+/* Form styling */
+#createAccountForm {
+    max-width: 200px;
+    margin-right: auto;
+    background-color: #2d2d2d;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    border-radius: 5px;
+}
+
+#createAccountForm label,
+#createAccountForm input,
+#createAccountForm select,
+#createAccountForm button {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+#createAccountForm input,
+#createAccountForm select {
+    padding: 10px;
+    border: 2px solid #f1f1f1;
+    border-radius: 4px;
+}
+
+#createAccountForm button {
+    background: linear-gradient(45deg, #333, #555); /* Gradient for button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#createAccountForm button:hover {
+    background: linear-gradient(45deg, #555, #777); /* Gradient change on hover */
+}

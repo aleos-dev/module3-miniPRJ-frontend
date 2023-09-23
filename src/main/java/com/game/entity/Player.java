@@ -2,6 +2,7 @@ package com.game.entity;
 
 import java.util.Date;
 
+
 public class Player {
     private Long id;
     private String name;
@@ -16,6 +17,7 @@ public class Player {
     }
 
     public Player(Long id, String name, String title, Race race, Profession profession, Date birthday, Boolean banned, Integer level) {
+
         this.id = id;
         this.name = name;
         this.title = title;
@@ -24,6 +26,7 @@ public class Player {
         this.birthday = birthday;
         this.banned = banned;
         this.level = level;
+
     }
 
     public Long getId() {

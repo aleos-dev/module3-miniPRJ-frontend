@@ -1,12 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG</title>
-    <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
-    <link href="/css/my.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="/rpg_war_exploded/css/my.css" rel="stylesheet">
+
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
 </head>
+
 <body>
 <h1>RPG admin panel</h1>
 <h2>Accounts list:</h2>
 
+<div id="accountsPagination">
+    <select id="pageSize"></select>
+    <div class="accountsTable-container">
+        <table id="accounts">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Race</th>
+                <th>Profession</th>
+                <th>Level</th>
+                <th>Birthday</th>
+                <th>Banned</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div id="paginationButtons"></div>
+
+</div>
+
+<hr> <!-- Horizontal Line -->
+
+<h3>Create New Account:</h3>
+<div id="createAccountForm">
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" minlength="1" maxlength="12"><br><br>
+
+    <label for="titleInput">Title:</label>
+    <input type="text" id="titleInput" minlength="1" maxlength="30"><br><br>
+
+    <label for="raceSelect">Race:</label>
+    <select id="raceSelect">
+        <!-- The options will be populated via the API -->
+    </select><br><br>
+
+    <label for="professionSelect">Profession:</label>
+    <select id="professionSelect">
+        <!-- The options will be populated via the API -->
+    </select><br><br>
+
+    <label for="levelInput">Level:</label>
+    <input type="number" id="levelInput" min="0" max="100"><br><br>
+
+    <label for="birthdayInput">Birthday:</label>
+    <input type="date" id="birthdayInput"><br><br>
+
+    <label for="bannedCheckbox">Banned:</label>
+    <input type="checkbox" id="bannedCheckbox"><br><br>
+
+    <button id="createAccountButton">Create Account</button>
+</div>
+
+<!-- Defered Scripts -->
+<script defer src="/rpg_war_exploded/js/accountManagement.js"></script>
+<script defer src="/rpg_war_exploded/js/table.js"></script>
+<script defer src="/rpg_war_exploded/js/pagination.js"></script>
+<script defer src="/rpg_war_exploded/js/main.js"></script>
+<script defer src="/rpg_war_exploded/js/accountCreation.js"></script>
 </body>
+
 </html>
